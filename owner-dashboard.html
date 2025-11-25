@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner Dashboard – Hostel Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Hostel Hunt</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="owner-dashboard.html">Owner Dashboard</a>
+        <a href="logout.php" class="btn">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+    <div class="dashboard-header">
+        <div>
+            <h2>Welcome, Owner</h2>
+            <p style="font-size:13px;color:#555;">
+                Yahan se aap apne hostels/PGs manage kar sakte hain.
+            </p>
+        </div>
+        <a href="add-property.html" class="btn-primary">+ Add New Property</a>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>City</th>
+            <th>Type</th>
+            <th>For</th>
+            <th>Rent (₹)</th>
+            <th>Available Beds</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Example static row – back-end se loop me data print karoge -->
+        <tr>
+            <td>Sunrise Boys Hostel</td>
+            <td>Bhubaneswar</td>
+            <td>Hostel</td>
+            <td>Boys</td>
+            <td>4500</td>
+            <td>5</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>Shree Ladies PG</td>
+            <td>Bhubaneswar</td>
+            <td>PG</td>
+            <td>Girls</td>
+            <td>5500</td>
+            <td>2</td>
+            <td>Active</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Property – Hostel Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Hostel Hunt</div>
+    <nav>
+        <a href="owner-dashboard.html">Owner Dashboard</a>
+        <a href="logout.php" class="btn">Logout</a>
+    </nav>
+</header>
+
+<div class="form-page">
+    <h2>Add New Property</h2>
+    <p class="small">Hostel, PG, Room ya Flat ka detail yahan fill karein.</p>
+
+    <form action="add_property.php" method="post">
+        <!-- Back-end: add_property.php me insert logic likhna hai -->
+        <div class="form-group">
+            <label>Property Title</label>
+            <input type="text" name="title" placeholder="e.g. Sunrise Boys Hostel" required>
+        </div>
+
+        <div class="form-group">
+            <label>Type</label>
+            <select name="type" required>
+                <option value="hostel">Hostel</option>
+                <option value="pg">PG</option>
+                <option value="room">Room</option>
+                <option value="flat">Flat</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>For (Gender)</label>
+            <select name="for_gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="both">Both</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" name="city" required>
+        </div>
+
+        <div class="form-group">
+            <label>Full Address</label>
+            <textarea name="address" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Nearby College / Landmark</label>
+            <input type="text" name="nearby_college">
+        </div>
+
+        <div class="form-group">
+            <label>Monthly Rent (₹)</label>
+            <input type="number" name="rent" required>
+        </div>
+
+        <div class="form-group">
+            <label>Security Deposit (₹)</label>
+            <input type="number" name="deposit">
+        </div>
+
+        <div class="form-group">
+            <label>Available Beds / Rooms</label>
+            <input type="number" name="available_beds" min="1" value="1">
+        </div>
+
+        <div class="form-group">
+            <label>Facilities (comma separated)</label>
+            <input type="text" name="facilities" placeholder="Wi-Fi, Food, Laundry, CCTV">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="description" placeholder="Short description about your property"></textarea>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-primary">Save Property</button>
+            <a href="owner-dashboard.html" class="text-link">Back to dashboard</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

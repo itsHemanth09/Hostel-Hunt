@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login – Hostel Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Hostel Hunt</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html" class="btn">Sign up</a>
+    </nav>
+</header>
+
+<div class="form-page">
+    <h2>Login</h2>
+    <p class="small">Student, bachelor ya owner – apna account use karke login karein.</p>
+
+    <form action="login.php" method="post">
+        <!-- Back-end: login.php me PHP logic likhna hai -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="form-group">
+            <label>Login as</label>
+            <select name="role">
+                <option value="student">Student / Bachelor</option>
+                <option value="owner">Owner</option>
+                <!-- Admin ka manual account banaoge to bhi yahi se login karwa sakte ho -->
+            </select>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-primary">Login</button>
+            <a href="register.html" class="text-link">New user? Register</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
